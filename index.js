@@ -11,7 +11,7 @@
  * @param {Element} element
  * @param {Object} options
  */
-function ScrollObserver(element, options) {
+export default function ScrollObserver(element, options) {
 	this.element = element;
 	this.options = Object.assign(this.defaultOptions, options);
 
