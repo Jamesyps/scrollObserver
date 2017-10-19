@@ -18,7 +18,7 @@ function ScrollObserver(element, options) {
 	if (this.options.threshold === 'this') {
 		this.threshold = getOffsetSum(this.element).top;
 	} else {
-		if (typeof parseInt(this.options.threshold, 10) === 'Number') {
+		if (typeof parseInt(this.options.threshold, 10) === 'number') {
 			this.threshold = parseInt(this.options.threshold, 10);
 		} else {
 			throw new Error('2nd param should either be an integer or "this"');
